@@ -7,6 +7,8 @@ body {
 #all-contents {
   max-width: 800px;
     margin: auto;
+    border-style: inset;
+    b
 }
 
 /* navigation menu */
@@ -16,6 +18,8 @@ nav {
    margin-bottom: 20px;
     display: flex;
     padding: 10px;
+    border-left: solid;
+    border-color: grey;
 }
 h1 {
     display: flex;
@@ -34,6 +38,7 @@ h1 {
 a {
     text-decoration: none;
     color: #fff;
+    border-left: solid;
 }
 
 /* main container area beneath menu */
@@ -51,12 +56,14 @@ main {
 .content {
     flex: 1;
     padding: 15px;
+    border-left: solid;
 }
 
 /* portfolio styles */
 #interests {
-    border: 4px silver ridge;
+    border: 4px rgb(255, 193, 245) ridge;
     padding: 8px;
+    border-left: solid;
 }
 h2, h3 {
     margin: 0px;
