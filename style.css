@@ -21,7 +21,7 @@ nav {
   display: flex;
   padding: 10px;
   border-left: solid;
-  border-color: grey;
+  border-color: rgb(255, 255, 255);
 }
 h1 {
   display: flex;
@@ -73,7 +73,7 @@ h3 {
 }
 /* portfolio styles */
 .content h1 {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 #portfolio {
@@ -94,7 +94,7 @@ h3 {
 
 #portfolio a {
   text-decoration: none;
-  color: #454545;
+  color: #ffffff;
 }
 /* responsive web design */
 @media screen and (min-width: 120px) and (max-width: 1080px) {
