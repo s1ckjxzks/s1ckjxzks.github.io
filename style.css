@@ -63,7 +63,7 @@ main {
 
 /* portfolio styles */
 #interests {
-  border: 4px rgb(255, 193, 245) ridge;
+  border: 4px rgb(255, 255, 255) ridge;
   padding: 8px;
   border-left: solid;
 }
