@@ -9,7 +9,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: rgb(255, 213, 254);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -66,7 +66,9 @@
 			//////////////////////////////////////////////////////////////////
 
 			// TODO 2 - Variable declarations 
-
+			var positionX = 0
+			var points = 0
+			var speed = 10
 
 
 			/* 
@@ -75,8 +77,17 @@
 			turn it around! 
 			*/
 			function update() {
+				/* your code to icrease positionX by 10 here */
+				positionX = positionX + speed
+				moveBoxTo(positionX)
+				if (positionX + 70 > boarderWidth) {
+					speed*= -1;
+				}
+				if (positionX < 0) {
+					speed *= -1;
 
 
+				}
 			};
 
 			/* 
@@ -85,13 +96,24 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
+				if (speed > 0) {
+				   speed = speed + 3
+			    } else {
+				   speed = speed - 3
+			    }
+
+			    speed = speed + 3
+			    positionX = 0;
+
+				 //your code to increase the points varieble by 1
+				 points = points + 1
+				 changeBoxText(points)
 
 
-			};
 
 
-
-
+		     }
+			
 
 		})();
 	</script>

@@ -66,7 +66,7 @@ $(function () {
     // example usage: createCannon(side, position, delay, width, height)
     createCannon("top", 400, 2000);
     createCannon("top", 1270, 2000);
-    createCannon("left", 530, 2000);
+    createCannon("left", 530, 1000);
    
 
 
