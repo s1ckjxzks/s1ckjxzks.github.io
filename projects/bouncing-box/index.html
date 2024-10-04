@@ -77,17 +77,16 @@
 			turn it around! 
 			*/
 			function update() {
-				/* your code to icrease positionX by 10 here */
-				positionX = positionX + speed
-				moveBoxTo(positionX)
-				if (positionX + 70 > boarderWidth) {
-					speed*= -1;
+			
+				if (positionX + 70 > boardWidth) {
+					speed *= -1;
 				}
 				if (positionX < 0) {
 					speed *= -1;
-
-
 				}
+
+				positionX = positionX + speed;
+				moveBoxTo(positionX)
 			};
 
 			/* 
